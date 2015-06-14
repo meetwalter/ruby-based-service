@@ -36,7 +36,7 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
 RUN apt-get update \
 	&& apt-get install -y autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev \
 	&& apt-get install -y sqlite3 libsqlite3-dev \
-	&& apt-get install -y postgresql libpq-dev
+	&& apt-get install -y libpq-dev
 
 # Bootstrap install MRI.
 # TODO(mtwilliams): Use Rubinius instead?
