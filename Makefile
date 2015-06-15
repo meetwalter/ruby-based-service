@@ -6,7 +6,7 @@ VERSION=$(shell cat VERSION)
 all:
 	docker build -t $(NAME):$(VERSION) .
 
-bump: all
+bump:
 	docker tag -f $(NAME):$(VERSION) $(NAME):latest
 	git tag $(VERSION)
 
