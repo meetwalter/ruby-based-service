@@ -7,7 +7,7 @@ all:
 	docker build -t $(NAME):$(VERSION) .
 
 bump:
-	docker tag -f $(NAME):$(VERSION) $(NAME):latest
+	docker tag -f $(NAME):latest $(NAME):$(VERSION)
 	git tag $(VERSION)
 
 push: all bump
