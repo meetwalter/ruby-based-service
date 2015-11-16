@@ -1,4 +1,4 @@
-NAME=meetwalter/ruby-powered-web-service
+NAME=meetwalter/ruby-powered-service
 VERSION=$(shell cat VERSION)
 
 .PHONY: all
